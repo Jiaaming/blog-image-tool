@@ -1,54 +1,19 @@
-# 博客拼图工具
+# Blog Collage
 
-一个简单的浏览器拼图工具，用来把多张照片排成适合博客的配图。适用于年度总结、旅行记录和日常分享。
+A small tool for making photo collages for blog posts. Runs in your browser; photos stay on your device.
 
-纯 HTML、CSS 和 JavaScript，无需安装依赖或注册账号，下载后即可离线使用。
+[Try it online](https://jiaaming.github.io/blog-image-tool/)
 
-**[在线使用](https://jiaaming.github.io/blog-image-tool/)**
+- Up to 5 rows, with 1–5 photos per row.
+- Adjustable canvas size, row heights, photo widths, spacing and background.
+- Drag to crop, scroll to zoom, and undo changes.
+- Export JPG, PNG or WebP. Save a project to continue later.
+- English and Chinese interface.
 
-## 功能
+## Run locally
 
-- **灵活排版**：支持 1–5 行，每行独立设置 1–5 张照片，提供常用布局预设。
-- **自由调整比例**：设置画布尺寸和比例，调整每行高度与单张照片的宽度占比。
-- **拖动与缩放**：拖动照片调整裁切位置，通过滚轮或滑块缩放，保持照片原始比例、不拉伸。
-- **素材管理**：批量导入、拖放替换、一键删除素材，支持撤销和重做。
-- **样式设置**：调整图片间距、外边距和背景颜色。
-- **高清导出**：支持 JPG、PNG、WebP，按画布实际像素导出。
-- **保存工程**：将照片、布局和裁切位置保存为 JSON 文件，之后可重新打开继续编辑。
+Download the repository and open `index.html` in a modern browser. No dependencies or build step. Keep the JS and CSS files alongside the HTML file.
 
-## 快速开始
+Add photos, choose a layout, adjust the framing, then export. Edits aren't saved automatically—use **Save project** before closing or refreshing the page.
 
-下载项目后，直接用现代浏览器打开 `index.html`。保持 `index.html`、`style.css` 和 `app.js` 在同一目录即可，不需要构建。
-
-也可以在安装了 Python 3 的电脑上，在项目目录运行：
-
-```sh
-python3 -m http.server 5173
-```
-
-然后打开 [http://localhost:5173](http://localhost:5173)。
-
-## 使用方法
-
-1. 点击「添加你的照片」，或将图片拖入页面。也可以先添加示例照片体验。
-2. 选择布局预设，或在右侧设置行数、每行张数和画布比例。
-3. 点击画布中的格子，再点击左侧素材即可替换照片；也可以直接拖入指定格子。
-4. 拖动照片调整位置，滚轮缩放，再按需要调整间距和背景。
-5. 选择导出格式，点击「导出图片」。需要以后继续编辑时，点击「保存工程」。
-
-撤销：`Ctrl / ⌘ + Z`；重做：`Ctrl / ⌘ + Shift + Z`。
-
-## 隐私与使用说明
-
-- 图片处理在浏览器本地完成，不会上传照片；没有外部依赖、统计或追踪脚本。
-- **目前不会自动保存**，刷新或关闭页面前，请保存需要保留的工程。工程文件包含照片，请按个人文件妥善保存。
-- 删除素材不会删除电脑上的原始文件；画布中使用该素材的格子会清空，可以撤销恢复。
-- 推荐导入 JPG、PNG、WebP。HEIC 等其他格式取决于浏览器支持。
-- 自定义画布宽高支持 320–6000 像素。大尺寸图片和大量素材会增加内存占用，博客配图通常可先尝试 1800–2400 像素宽。
-- 导出不包含选中边框等编辑标记，未填入照片的格子显示为画布背景色。
-
-## 开发与反馈
-
-项目没有构建步骤：`index.html` 是页面结构，`style.css` 是样式，`app.js` 包含排版、交互和导出逻辑。
-
-欢迎通过 Issues 反馈问题或提出建议，也欢迎提交 Pull Request。报告问题时，请附上浏览器版本、复现步骤和必要的截图。
+The app uses plain HTML, CSS, JavaScript and Canvas. Issues and pull requests are welcome.
