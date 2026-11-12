@@ -4,6 +4,8 @@
 
 纯 HTML、CSS 和 JavaScript，无需安装依赖或注册账号，下载后即可离线使用。
 
+**[在线使用](https://jiaaming.github.io/blog-image-tool/)**
+
 ## 功能
 
 - **灵活排版**：支持 1–5 行，每行独立设置 1–5 张照片，提供常用布局预设。
